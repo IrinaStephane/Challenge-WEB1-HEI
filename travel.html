@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCRAM'V</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/image/logo.png">
+    <link rel="stylesheet" href="assets/css/travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a data-aos="fade-right" data-aos-delay="200" href="#" class="logo">
+                <img src="assets/image/logo.png" alt="logo">
+                <h2>JCRAM'V</h2>
+            </a>
+            <ul class="nav__menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li data-aos="fade-down" data-aos-delay="200" class="nav__link"><a href="#home">Home</a></li>
+                <li data-aos="fade-down" data-aos-delay="200" class="nav__link"><a href="#about">About</a></li>
+                <li data-aos="fade-down" data-aos-delay="200" class="nav__link"><a href="#destination">Destination</a></li>
+                <li data-aos="fade-down" data-aos-delay="200" class="nav__link"><a href="#hotel">Hotel</a></li>
+                <li data-aos="fade-down" data-aos-delay="200" class="nav__link"><a href="#reservation">Reservation</a></li>
+                <li class="nav__link"><a class="button__sign__out">Sign out</a></li>
+            </ul>
+            <button data-aos="fade-left" data-aos-delay="200" id="menu-open-button" class="fas fa-bars"></button>
+            <span class="nav__button__sign__out" data-aos="fade-left" data-aos-delay="200">
+                <button class="button__sign__out">Sign out</button>
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home__section" id="home">
+            <div data-aos="fade-right" data-aos-delay="200" class="home__details">
+                <h1>Discover the best destination in the world</h1>
+                <p>Welcome to JCRAM'V, your first destination for discovering the most breathtaking places on Earth.<br>
+                Whether you're seeking  adventure or relaxation, we have the perfect getway for you.</p>
+                <button class="home__button">Get Started</button>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="200" class="home__image">
+                <div class="home__picture">
+                    <img src="assets/image/girlTravel.png" alt="Girl">
+                    <img src="assets/image/fleche-courbe.png" alt="Flêche">
+                    <img src="assets/image/bannerBefor.jpg" alt="Banner">
+                </div>
+                <div data-aos="fade-down" class="home__image__rate">
+                    <span class="material-symbols-outlined">stars</span>
+                    6.8
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation__section" id="about">
+            <div class="reservation__image">
+                <div class="reservation__image__top">
+                    <img data-aos="fade-right" data-aos-delay="200" src="assets/image/about1.jpg" alt="About">
+                    <img data-aos="fade-up" data-aos-delay="200" src="assets/image/about2.jpg" alt="About">
+                </div>
+                <div class="reservation__image__bottom">
+                    <img data-aos="fade-up" data-aos-delay="200" src="assets/image/about3.jpg" alt="About">
+                    <img data-aos="fade-left" data-aos-delay="200" src="assets/image/about4.jpg" alt="About">
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="reservation__description">
+                <h1>We Recommende a Beautiful place every month</h1>
+                <p>At JCRAM'V we strive to bring you the most stunning destinations every month, From tropical paradises to historic landmarks, our curated sections are sure to inspire your next adventure.</p>
+                <button class="reservation__button">Reservation</button>
+                <div  class="reservation__description__number">
+                    <div class="reservation__stat">
+                        <div class="reservation__number">
+                            <span id="statCount">0</span><span>%</span>
+                        </div>
+                        <div class="reservation__stat__description">
+                            <p>of satistied customers recommend <br>our services</p>
+                        </div>
+                    </div>
+                    <div class="reservation__stat">
+                        <div class="reservation__number">
+                            <span id="countriesCount">0</span>
+                        </div>
+                        <div class="reservation__stat__description">
+                            <p>countries visited <br>annually</p>
+                        </div>
+                    </div>
+                    <div class="reservation__stat">
+                        <div class="reservation__number">
+                            <span id="experienceCount">0</span>
+                        </div>
+                        <div class="reservation__stat__description">
+                            <p>years of experience in the travel<br>industry</p>
+                        </div>
+                    </div>                                                  
+                </div>
+            </div>
+        </section>
+
+        <section  class="destination__section" id="destination">
+            <div data-aos="zoom-in-up" class="destination__title">
+                <h1>Top destination</h1>
+                <p>Explore our best destination</p>
+            </div>
+            <div class="destination__image">
+                <ul class="destination__container">
+                    <li data-aos="zoom-in-up" class="destination__item">
+                        <div class="destination__picture"><img src="assets/image/topdestination1.jpg" alt="Destination"></div>                        
+                        <div class="destination__time">
+                            <div class="destination__name">
+                                <h3>Poitiers</h3>
+                                <p>2 Days 3 Nights</p>
+                            </div>
+                            <div class="destination__rate">
+                                <i class="fa-solid fa-star"></i>
+                                4.3
+                            </div>
+                        </div>
+                        <div class="destination__activity">
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-plane"></i>
+                                <p>Plane</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>Hotel</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>Transfert</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                                <p>Activity</p>
+                            </div>
+                        </div>
+                        <div class="destination__price">
+                            <i class="fa-solid fa-bookmark"></i>
+                            98.90$/person
+                        </div>
+                    </li>
+                    <li data-aos="zoom-in-up" data-aos-delay="150" class="destination__item">
+                        <div class="destination__picture"><img src="assets/image/topdestination2.jpg" alt="Destination"></div>                        
+                        <div class="destination__time">
+                            <div class="destination__name">
+                                <h3>Spain</h3>
+                                <p>6 Days 7 Nights</p>
+                            </div>
+                            <div class="destination__rate">
+                                <i class="fa-solid fa-star"></i>
+                                4.7
+                            </div>
+                        </div>
+                        <div class="destination__activity">
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-plane"></i>
+                                <p>Plane</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>Hotel</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>Transfert</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                                <p>Activity</p>
+                            </div>
+                        </div>
+                        <div class="destination__price">
+                            <i class="fa-solid fa-bookmark"></i>
+                            98.90$/person
+                        </div>
+                    </li>
+                    <li data-aos="zoom-in-up" data-aos-delay="300" class="destination__item">
+                        <div class="destination__picture"><img src="assets/image/topdestination3.jpg" alt="Destination"></div>                        
+                        <div class="destination__time">
+                            <div class="destination__name">
+                                <h3>Kenya</h3>
+                                <p>8 Days 9 Nights</p>
+                            </div>
+                            <div class="destination__rate">
+                                <i class="fa-solid fa-star"></i>
+                                4.9
+                            </div>
+                        </div>
+                        <div class="destination__activity">
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-plane"></i>
+                                <p>Plane</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>Hotel</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>Transfert</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                                <p>Activity</p>
+                            </div>
+                        </div>
+                        <div class="destination__price">
+                            <i class="fa-solid fa-bookmark"></i>
+                            98.90$/person
+                        </div>
+                    </li>
+                    <li data-aos="zoom-in-up" data-aos-delay="450" class="destination__item">
+                        <div class="destination__picture"><img src="assets/image/topdestination4.jpg" alt="Destination"></div>                        
+                        <div class="destination__time">
+                            <div class="destination__name">
+                                <h3>Hallstat</h3>
+                                <p>3 Days 4 Nights</p>
+                            </div>
+                            <div class="destination__rate">
+                                <i class="fa-solid fa-star"></i>
+                                4.9
+                            </div>
+                        </div>
+                        <div class="destination__activity">
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-plane"></i>
+                                <p>Plane</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-hotel"></i>
+                                <p>Hotel</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-car"></i>
+                                <p>Transfert</p>
+                            </div>
+                            <div class="destination__icon">
+                                <i class="fa-solid fa-umbrella-beach"></i>
+                                <p>Activity</p>
+                            </div>
+                        </div>
+                        <div class="destination__price">
+                            <i class="fa-solid fa-bookmark"></i>
+                            108.90$/person
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form__section" id="reservation">
+            <div data-aos="zoom-in-up" data-aos-delay="150" class="form">
+                <div class="form__container">
+                    <div class="form__details">
+                        <h1>Life is short,<br> the world is wide</h1>
+                        <p>Lorem ipsum dolor sit amet consecteur adipiscing elit. Officilis harum naturs ex, sit numquam eligendi illum cupidatate?</p>
+                        <h2>Here our Reservation</h2>
+                    </div>
+                    <form class="form__input" id="form">
+                        <div class="form__top">
+                            <label for="location">Location</label>
+                            <div class="form__input__container">
+                                <i class="fas fa-paper-plane"></i>
+                                <input type="text" id="location" placeholder="where are you going" required>
+                            </div>
+                
+                            <label for="check-in">Check in</label>
+                            <div class="form__input__container">
+                                <i class="fas fa-calendar-check"></i>
+                                <input type="date" id="check-in" required>
+                            </div>
+                        </div>
+                
+                        <div class="form__bottom">
+                            <label for="check-out">Check out</label>
+                            <div class="form__input__container">
+                                <i class="fas fa-calendar-check"></i>
+                                <input type="date" id="check-out" required>
+                            </div>
+                
+                            <label for="email">E-mail</label>
+                            <div class="form__input__container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="exemple@gmail.com" required>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" form="form" class="form__submit">make reservation</button>
+                </div>
+                <div class="form__image">
+                    <img src="assets/image/reservation.jpg" alt="Reservation">
+                    <p><i class="fa-solid fa-square-check"></i>Reservation success</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hotel__section" id="hotel">
+            <div class="hotel__title" data-aos="zoom-in-up" data-aos-delay="200">
+                <h1>Our hotel</h1>
+                <p>You can see their one of hotel destination</p>
+            </div>
+            <div class="slider-container swiper" data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="slider-warpper">
+                    <ul class="swiper-wrapper">
+                        <li class="hotel__item swiper-slide">
+                            <img src="assets/image/hotel1.jpg" alt="Hotel" class="hotel__picture">
+                        </li>
+                        <li class="hotel__item swiper-slide">
+                            <img src="assets/image/hotel2.jpg" alt="Hotel" class="hotel__picture">
+                        </li>
+                        <li class="hotel__item swiper-slide">
+                            <img src="assets/image/hotel5.jpg" alt="Hotel" class="hotel__picture">
+                        </li>
+                        <li class="hotel__item swiper-slide">
+                            <img src="assets/image/hotel3.jpg" alt="Hotel" class="hotel__picture">
+                        </li>
+                        <li class="hotel__item swiper-slide">
+                            <img src="assets/image/hotel4.jpg" alt="Hotel" class="hotel__picture">
+                        </li>
+                    </ul>
+    
+                    <div class="swiper-slide-button swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer__social">
+            <a href="#">
+                <img src="assets/image/logo.png" alt="Logo">
+                <p>JCRAM'<span>V</span></p>
+            </a>
+            <p>Explore the world with JCRAM'V and discover unforgettable experiences. From the moment you arrive , we're dedicated to making your journey extraordinary</p>
+            <div class="footer__social__link">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <h2>Contact Us</h2>
+            <ul class="footer__contact__list">
+                <li class="footer__contact__info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>123 rue Radama Soavimasoandro</p>
+                </li>
+                <li class="footer__contact__info">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>hei.irina.4@gmail.com</p>
+                </li>
+                <li class="footer__contact__info">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+261-38-45-678-09</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__input">
+            <h2>Sign up to new paper</h2>
+            <form class="footer__submit">
+                <input type="email" required placeholder="exemple@gmail.com">
+                <button type="submit">Send</button>
+            </form>  
+            <p>Sent !</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/travel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swipper.js"></script>
+
+</body>
+</html>
