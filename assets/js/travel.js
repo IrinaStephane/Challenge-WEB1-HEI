@@ -8,6 +8,7 @@ const formReservation = document.querySelector("#form");
 const about = document.querySelector(".reservation__section");
 const footerSignUp = document.querySelector(".footer__submit");
 const footerSent = document.querySelector(".footer__input p");
+const navMenu = document.querySelector(".nav__menu");
 
 
 window.addEventListener("scroll", () => {
@@ -119,3 +120,13 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => menuOpenButton.click());
 });
 
+// Fermer le menu en cliquant à l'extérieur
+document.addEventListener("click", (event) => {
+    // Vérifie si le menu est ouvert
+    if (document.body.classList.contains("show-mobile-menu")) {
+        // Ferme le menu si on clique en dehors de la navbar et des boutons
+        if (!navMenu.contains(event.target) && event.target !== menuOpenButton) {
+            document.body.classList.remove("show-mobile-menu");
+        }
+    }
+})
